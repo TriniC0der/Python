@@ -1,10 +1,18 @@
-end = 6
-count = 0 
-for num in range(1,end+1):
-	count += num
-print count
+x = 23
+epsilon = 0.01
+step = 0.1
+guess = 0.0
 
+while abs(guess**2-x) >= epsilon:
+    if guess <= x:
+        guess += step
+    else:
+        break
 
+if abs(guess**2 - x) >= epsilon:
+    print 'failed'
+else:
+    print 'succeeded: ' + str(guess)
 
 '''
 s = 'azcbobobegghakl'
