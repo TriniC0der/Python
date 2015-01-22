@@ -15,3 +15,9 @@ def long_sub(input_string):
 
 sub = (long_sub(s))
 print "Longest substring in alphabetical order is: %s" %sub
+
+
+def clip(lo, x, hi):
+    result = (((lo + x + hi)) - max(lo,x,hi) - min(lo,x,hi))
+    finresult = round(result, 2)
+    print finresult
